@@ -1,0 +1,28 @@
+<?php
+
+    function signParams($params, $secretKey){
+        $dataToSign = array();
+        $signedFieldNames = explode(",",$params["signed_field_names"]);
+        foreach ($signedFieldNames as &$field) {    
+            $dataToSign[] = $field . "=" . $params[$field];
+        }
+        $joinedData = implode(",",$dataToSign);
+        // echo $joinedData;
+        return base64_encode(hash_hmac('sha256', $joinedData, $secretKey, true));
+    }
+
+    $access_key = "1b33c604b8e93659ba3a16b40e1626f9";
+    $profile_id = "03DC09E3-9AB6-47E7-B600-B1900A80C875";
+    $secret_key = "61160fd8a0a040bd820346a88116aeb064d525d39ee5446ab7f212f68c";
+
+    $params = array();
+    $params['access_key'] = $access_key;
+    $params['profile_id'] = $profile_id;
+    $params['username'] =  20070601569877;//uniqid();     //it's mean transaction_id of our system
+    $params['password'] = gmdate("Y-m-d\TH:i:s\Z");//"2020-07-08";//gmdate("Y-m-d\TH:i:s\Z");
+    $params['authen_type'] = 'authorization';
+    $params['signed_field_names'] = '';
+    $params['signed_field_names'] = implode(',', array_keys($params));
+
+    $params['signature'] = signParams($params, $secret_key);
+?>
