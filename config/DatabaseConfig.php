@@ -25,7 +25,6 @@ class DatabaseConfig {
     }
 
     public function disconnection() {
-
         try {
             return die();
         } catch (PDOException $e) {

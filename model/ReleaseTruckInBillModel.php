@@ -390,6 +390,7 @@ class ReleaseTruckInBillModel {
                 . "cost_repair_tire_bath_left = :cost_repair_tire_bath_left, other_bath = :other_bath, other_bath_left = :other_bath_left, total_cost_bath = :total_cost_bath, total_cost_bath_left = :total_cost_bath_left, km_goes = :km_goes, km_back = :km_back,"
                 . "distance = :distance, change_oil = :change_oil, update_by = :update_by, update_date = sysdate() "
                 . "where bill_release_truck_in_no = :bill_release_truck_in_no";
+        echo "===".$licensePlateBackPart;
         try {
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(":bill_release_truck_in_no", $billReleaseTruckInNo);

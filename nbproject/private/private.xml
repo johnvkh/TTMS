@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/xampp/htdocs/TTMS/model/TruckSharingModel.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/model/ReleaseTruckSharingBillModel.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/trucksharing.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/monthlywork/additionalincomeanddeductmoneymonthlydriver.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/trucktype.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/config/HeaderConfig.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/config/DatabaseConfig.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/dailywork/releasetrucksharingbill.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/dailywork/releasetruckinbill.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/includes/Autoload.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/deliverylocation.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/model/ReleaseTruckInBillModel.php</file>
+        </group>
+    </open-files>
+</project-private>
