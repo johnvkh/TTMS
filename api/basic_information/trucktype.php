@@ -1,14 +1,19 @@
 <?php
 
 require_once '../../includes/Autoload.php';
+require_once '../../utils/logger.php';
 
 $db = new DatabaseConfig();
 $conn = $db->connection();
 $TruckTypeModel = new TruckTypeModel();
 $timestamp = date("Y-m-d h:i:s");
 
+
+$className = basename(__FILE__, '.php');
+$url = $_SERVER["REQUEST_URI"];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'));
+    requestLogger($data, $className , $url);
     switch ($data->actionCode) {
         case ActionCode::GET_ALL_TRUCK_TYPE:
             try {
@@ -62,6 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     );
                     http_response_code(200);
                     echo json_encode($res);
+                    responseLogger($res, $className, $url);
                     return;
                 } else {
                     $res = array(
@@ -70,6 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     );
                     http_response_code(200);
                     echo json_encode($res);
+                    responseLogger($res, $className, $url);
                     return;
                 }
             } catch (Exception $ex) {

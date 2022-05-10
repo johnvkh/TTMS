@@ -1,0 +1,15 @@
+2022/05/10 10:41:40 [ INFO ][trucktype] - /TTMS/api/basic_information/trucktype.php
+2022/05/10 10:41:40 [ INFO ][trucktype] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/10 10:41:40 [ INFO ][trucktype] -   ActionCode : 99999
+2022/05/10 10:41:40 [ INFO ][trucktype] -   ActionNodeId : 1
+2022/05/10 10:41:40 [ INFO ][trucktype] - -----------------------------------------
+2022/05/10 10:41:40 [ INFO ][trucktype] - /TTMS/api/basic_information/trucktype.php
+2022/05/10 10:41:40 [ INFO ][trucktype] - -----------RESPONSE TO CLIENT -----------
+2022/05/10 10:41:40 [ INFO ][trucktype] -   Result : 4
+2022/05/10 10:41:40 [ INFO ][trucktype] -   Data : [{"truckTypeId":"172","truckTypeCode":"T-113","truckTypeName":"\u0eab\u0eb2\u0e87\u0ea5\u0eb2\u0e81 \u0eaa\u0eb5\u0e82\u0ebd\u0ea7","tireLifeKm":50000,"tireLifeDay":"5000","numberOfWheels":"12","createBy":"unauthroized","createDate":"2022-04-19 10:46:16","updateBy":null,"updateDate":null},{"truckTypeId":"171","truckTypeCode":"K.","truckTypeName":"\u0eab\u0ebb\u0ea7\u0ea5\u0eb2\u0e81 \u0eaa\u0eb5\u0e82\u0ebd\u0ea7","tireLifeKm":50000,"tireLifeDay":"500","numberOfWheels":"16","createBy":"admin","createDate":"2021-12-21 10:04:53","updateBy":"unauthroized","updateDate":"2022-01-26 06:55:57"},{"truckTypeId":"170","truckTypeCode":"K,","truckTypeName":"\u0eab\u0ebb\u0ea7\u0ea5\u0eb2\u0e81 \u0eaa\u0eb5\u0ec0\u0eab\u0ebc\u0eb7\u0ead\u0e87","tireLifeKm":50000,"tireLifeDay":"500","numberOfWheels":"10","createBy":"admin","createDate":"2021-12-21 10:04:23","updateBy":"unauthroized","updateDate":"2022-01-16 13:34:14"},{"truckTypeId":"169","truckTypeCode":"K","truckTypeName":"\u0eab\u0ebb\u0ea7\u0ea5\u0eb2\u0e81 \u0eaa\u0eb5\u0e82\u0eb2\u0ea7","tireLifeKm":50000,"tireLifeDay":"500","numberOfWheels":"10","createBy":"admin","createDate":"2021-12-21 09:27:07","updateBy":null,"updateDate":null}]
+2022/05/10 10:41:40 [ INFO ][trucktype] -   ResponseCode : 00000
+2022/05/10 10:41:40 [ INFO ][trucktype] -   Message : success
+2022/05/10 10:41:40 [ INFO ][trucktype] -   Timestamp : 2022-05-10 10:41:40
+2022/05/10 10:41:40 [ INFO ][trucktype] -   ActionCode : 99999
+2022/05/10 10:41:40 [ INFO ][trucktype] -   ActionNodeId : 1
+2022/05/10 10:41:40 [ INFO ][trucktype] - -----------------------------------------
