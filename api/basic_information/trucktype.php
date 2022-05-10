@@ -13,7 +13,7 @@ $className = basename(__FILE__, '.php');
 $url = $_SERVER["REQUEST_URI"];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = json_decode(file_get_contents('php://input'));
-    requestLogger($data, $className , $url);
+    requestLogger($data, $className, $url);
     switch ($data->actionCode) {
         case ActionCode::GET_ALL_TRUCK_TYPE:
             try {
@@ -148,9 +148,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
                     http_response_code(200);
                     echo json_encode($res);
+                    responseLogger($res, $className, $url);
                     return;
                 } else {
-                    echo json_encode(array(
+                    $res = (array(
                         'responseCode' => ErrorCode::NOT_FOUND_TRUCK_TYPE,
                         'message' => 'The Truck Code is not found in the system, Please use another code',
                         'timestamp' => $timestamp,
@@ -158,6 +159,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         'actionNodeId' => $actionNodeId
                     ));
                     http_response_code(200);
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
                     return;
                 }
             } catch (Exception $ex) {
