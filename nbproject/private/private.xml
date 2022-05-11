@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/TTMS/model/TruckRegistrationBackPartModel.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/utils/logger.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/logs/full_2022.05.10.log</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/trucktype.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/truckregistrationbackpart.php</file>
+        </group>
     </open-files>
 </project-private>

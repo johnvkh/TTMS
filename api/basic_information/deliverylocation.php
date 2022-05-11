@@ -1,5 +1,4 @@
 <?php
-
 // error_reporting(0);
 require_once '../../includes/Autoload.php';
 $validateString = new ValidateString();
@@ -38,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     while ($row = $getAllDeliveryLocation->fetch(PDO::FETCH_ASSOC)) {
                         extract($row);
                         $data = array(
-                            "id"=>$id,
+                            "id" => $id,
                             "locationCode" => $location_code,
                             "locationName" => $location_name,
                             "createBy" => $create_by,
@@ -116,7 +115,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     while ($row = $getDeliveryLocation->fetch(PDO::FETCH_ASSOC)) {
                         extract($row);
                         $data = array(
-                             "id"=>$id,
+                            "id" => $id,
                             "locationCode" => $location_code,
                             "locationName" => $location_name,
                             "createBy" => $create_by,
@@ -277,7 +276,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ));
                     return;
                 }
-                
+
                 if (trim(!isset($data->locationName)) || trim($data->locationName) == null || trim($data->locationName) == "") {
                     echo json_encode(array(
                         'responseCode' => ErrorCode::INVALID_DATA_SEND,

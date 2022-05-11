@@ -112,7 +112,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
             break;
         case ActionCode::GET_DRIVER:
-
             try {
                 if (!isset($data->actionCode) || $data->actionCode == null || $data->actionCode == "" || $data->actionCode != ActionCode::GET_DRIVER) {
                     echo json_encode(array(
@@ -213,7 +212,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
             break;
         case ActionCode::GET_ALL_REPORT_DRIVER_LICENSE_EXPIRED:
-
             try {
                 if (!isset($data->actionCode) || $data->actionCode == null || $data->actionCode == "" || $data->actionCode != ActionCode::GET_ALL_REPORT_DRIVER_LICENSE_EXPIRED) {
                     echo json_encode(array(

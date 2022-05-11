@@ -121,7 +121,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     return;
                 }
 
-
                 $actionCode = isset($data->actionCode) ? trim($data->actionCode) : null;
                 $actionNodeId = isset($data->actionNodeId) ? trim($data->actionNodeId) : null;
                 $driverCode = isset($data->driverCode) ? trim($data->driverCode) : null;

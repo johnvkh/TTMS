@@ -1,17 +1,14 @@
 <?php
 require_once '../../includes/Autoload.php';
-
 $validateString = new ValidateString();
 $validateDate = new ValidateDate();
 $db = new DatabaseConfig();
 $conn = $db->connection();
 $OwnerTruckSharingModel = new OwnerTruckSharingModel();
-
 $timestamp = date("Y-m-d h:i:s");
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $data = json_decode(file_get_contents('php://input'));
-
     if (!isset($data->actionCode)) {
         echo json_encode(array(
             'responseCode' => ErrorCode::UNKNOWN_ERROR,
@@ -24,7 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     switch ($data->actionCode) {
         case ActionCode::GET_ALL_OWNER_TRUCK_SHARING:
-
             try {
                 if (!isset($data->actionCode) || $data->actionCode == null || $data->actionCode == "" || $data->actionCode != ActionCode::GET_ALL_OWNER_TRUCK_SHARING) {
                     echo json_encode(array(
@@ -231,11 +227,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         return;
                     }
                 }
-
-
-
-
-
                 $actionCode = isset($data->actionCode) ? trim($data->actionCode) : null;
                 $actionNodeId = isset($data->actionNodeId) ? trim($data->actionNodeId) : null;
                 $code = isset($data->code) ? trim($data->code) : null;
@@ -251,9 +242,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 $contactNameWith = isset($data->contactNameWith) ? trim($data->contactNameWith) : null;
                 $note = isset($data->note) ? trim($data->note) : null;
                 $createBy = isset($data->createBy) ? trim($data->createBy) : null;
-
                 $getOwnerTruckSharing = $OwnerTruckSharingModel->getOwnerTruckSharing($conn, $code);
-
                 if ($getOwnerTruckSharing->rowCount() > 0) {
                     echo json_encode(array(
                         'responseCode' => ErrorCode::CREATE_TRUCK_TYPE_FAIL,
@@ -262,7 +251,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     http_response_code(200);
                     return;
                 }
-
 
                 $result = $OwnerTruckSharingModel->createNewOwnerTruckSharing(
                     $conn,
@@ -313,7 +301,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             } finally {
                 $db->disconnection();
             }
-
             break;
         case ActionCode::UPDATE_OWNER_TRUCK_SHARING:
             try {

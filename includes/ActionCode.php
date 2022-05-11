@@ -92,6 +92,8 @@ class ActionCode {
     const CREATE_TIRE_TRUCK = '99927';
     const UPDATE_TIRE_TRUCK = '99926';
     const DELETE_TIRE_TRUCK = '99925';
+    const CHANGE_TIRE_TRUCK = '99591';
+    
 //DOCUMENT_NO
     const GET_ALL_DOCUMENT_NO = '99924';
     const GET_DOCUMENT_NO = '99923';

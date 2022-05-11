@@ -30,7 +30,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ));
                     return;
                 }
-
                 if (!isset($data->actionNodeId) || $data->actionNodeId == null || $data->actionNodeId == "" || !$validateString->check_node_id($data->actionNodeId)) {
                     echo json_encode(array(
                         'responseCode' => ErrorCode::INVALID_DATA_SEND,
@@ -308,7 +307,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ));
                     return;
                 }
-                
+
                 if (!isset($data->billReleaseTruckSharingNo) || empty($data->billReleaseTruckSharingNo)) {
                     http_response_code(200);
                     echo json_encode(array(
@@ -317,7 +316,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ));
                     return;
                 }
-                
+
                 if (isset($data->goDate)) {
                     if (!ValidateDate::checkDateFormat($data->goDate)) {
                         http_response_code(200);
@@ -339,7 +338,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         return;
                     }
                 }
-                
+
                 if (!isset($data->licensePlate) || empty($data->licensePlate)) {
                     http_response_code(200);
                     echo json_encode(array(
@@ -348,7 +347,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ));
                     return;
                 }
-                
+
                 //license_plate_back_part can null 
                 //driverFirst can null
                 //driverSecond can null
@@ -404,7 +403,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ));
                     return;
                 }
-                
+
                 if (trim(!isset($data->totalAllowance)) || trim($data->totalAllowance) == null || trim($data->totalAllowance) == "") {
                     echo json_encode(array(
                         'responseCode' => ErrorCode::INVALID_DATA_SEND,
@@ -412,7 +411,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ));
                     return;
                 }
-                
+
                 if (trim(!isset($data->payFirst)) || trim($data->payFirst) == null || trim($data->payFirst) == "") {
                     echo json_encode(array(
                         'responseCode' => ErrorCode::INVALID_DATA_SEND,
@@ -613,7 +612,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     ));
                     return;
                 }
-                
+
                 $actionCode = isset($data->actionCode) ? trim($data->actionCode) : null;
                 $actionNodeId = isset($data->actionNodeId) ? trim($data->actionNodeId) : null;
                 $billReleaseTruckSharingNo = isset($data->billReleaseTruckSharingNo) ? trim($data->billReleaseTruckSharingNo) : null;

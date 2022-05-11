@@ -18,10 +18,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         case ActionCode::GET_ALL_TRUCK_TYPE:
             try {
                 if (!isset($data->actionCode) || $data->actionCode == null || $data->actionCode == "" || $data->actionCode != ActionCode::GET_ALL_TRUCK_TYPE) {
-                    echo json_encode(array(
+                    $res = array(
                         'responseCode' => ErrorCode::INVALID_DATA_SEND,
                         'message' => 'Invalid Action Code'
-                    ));
+                    );
+                    echo json_encode($res);
                     return;
                 }
 
