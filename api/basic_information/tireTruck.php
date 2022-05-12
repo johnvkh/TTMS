@@ -652,7 +652,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             }
 
             break;
-        case ActionCode::CHANGE_TIRE_TRUCK:
+        case ActionCode::DELETE_TIRE_TRUCK:
             try {
                 if ($data->actionCode == null || $data->actionCode == "" || $data->actionCode != ActionCode::DELETE_TIRE_TRUCK) {
                     echo json_encode(array(
@@ -748,8 +748,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     responseLogger($res, $className, $url);
                     return;
                 }
-
-                if ($data->actionCode == null || $data->actionCode == "" || !$validateString->check_node_id($data->actionNodeId)) {
+                if ($data->actionNodeId == null || $data->actionNodeId == "" || !$validateString->check_node_id($data->actionNodeId)) {
                     $res = array(
                         'responseCode' => ErrorCode::INVALID_DATA_SEND,
                         'message' => 'Invalid Action Node'
@@ -758,7 +757,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     responseLogger($res, $className, $url);
                     return;
                 }
-
                 if (!isset($data->whichPart) || trim($data->whichPart) == null || trim($data->whichPart) == "") {
                     $res = array(
                         'responseCode' => ErrorCode::INVALID_DATA_SEND,
@@ -768,7 +766,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     responseLogger($res, $className, $url);
                     return;
                 }
-
                 if (!isset($data->licensePlate) || trim($data->licensePlate) == null || trim($data->licensePlate) == "") {
                     $res = array(
                         'responseCode' => ErrorCode::INVALID_DATA_SEND,
@@ -778,7 +775,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     responseLogger($res, $className, $url);
                     return;
                 }
-
                 if (!isset($data->wheelPosition) || trim($data->wheelPosition) == null || trim($data->wheelPosition) == "") {
                     $res = array(
                         'responseCode' => ErrorCode::INVALID_DATA_SEND,
@@ -788,30 +784,164 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     responseLogger($res, $className, $url);
                     return;
                 }
+                if (!isset($data->oldTireCode) || trim($data->oldTireCode) == null || trim($data->oldTireCode) == "") {
+                    $res = array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid old tire Code'
+                    );
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
+                    return;
+                }
+                if (!isset($data->oldTireBrandId) || trim($data->oldTireBrandId) == null || trim($data->oldTireBrandId) == "") {
+                    $res = array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid old Tire Brand Id'
+                    );
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
+                    return;
+                }
+                if (!isset($data->oldTireSize) || trim($data->oldTireSize) == null || trim($data->oldTireSize) == "") {
+                    $res = array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid old Tire Size'
+                    );
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
+                    return;
+                }
+                if (!isset($data->newWheelPositionCode) || trim($data->newWheelPositionCode) == null || trim($data->newWheelPositionCode) == "") {
+                    $res = array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid new wheel Position Code'
+                    );
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
+                    return;
+                }
+                if (!isset($data->newTireCode) || trim($data->newTireCode) == null || trim($data->newTireCode) == "") {
+                    $res = array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid new tire Code'
+                    );
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
+                    return;
+                }
+                if (!isset($data->newTireBrandId) || trim($data->newTireBrandId) == null || trim($data->newTireBrandId) == "") {
+                    $res = array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid new tire brand id'
+                    );
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
+                    return;
+                }
+                if (!isset($data->newTireSize) || trim($data->newTireSize) == null || trim($data->newTireSize) == "") {
+                    $res = array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid new tire size'
+                    );
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
+                    return;
+                }
+                if (!isset($data->newMileShouldChangeTire) || trim($data->newMileShouldChangeTire) == null || trim($data->newMileShouldChangeTire) == "") {
+                    $res = array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid mile should change tire'
+                    );
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
+                    return;
+                }
+                if (!isset($data->reasonForChangeTire) || trim($data->reasonForChangeTire) == null || trim($data->reasonForChangeTire) == "") {
+                    $res = array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid reason for changeTire'
+                    );
+                    echo json_encode($res);
+                    responseLogger($res, $className, $url);
+                    return;
+                }
+                if (!isset($data->CreateBy) || trim($data->CreateBy) == null || trim($data->CreateBy) == "") {
+                    echo json_encode(array(
+                        'responseCode' => ErrorCode::INVALID_DATA_SEND,
+                        'message' => 'Invalid Create By'
+                    ));
+                    return;
+                }
 
                 $actionCode = isset($data->actionCode) ? $data->actionCode : null;
                 $actionNodeId = isset($data->actionNodeId) ? $data->actionNodeId : null;
-                $licensePlate = isset($data->licensePlate) ? $data->licensePlate : null;
-                $wheelPosition = isset($data->wheelPosition) ? $data->wheelPosition : null;
                 $whichPart = isset($data->whichPart) ? $data->whichPart : null;
-
+                $licensePlate = isset($data->licensePlate) ? $data->licensePlate : null;
+                $oldTireCode = isset($data->oldTireCode) ? $data->oldTireCode : null;
+                $oldTireBrandId = isset($data->oldTireBrandId) ? $data->oldTireBrandId : null;
+                $oldTireSize = isset($data->oldTireSize) ? $data->oldTireSize : null;
+                $wheelPosition = isset($data->wheelPosition) ? $data->wheelPosition : null;
+                $newWheelPositionCode = isset($data->newWheelPositionCode) ? trim($data->newWheelPositionCode) : null;
+                $newTireCode = isset($data->newTireCode) ? $data->newTireCode : null;
+                $newTireBrandId = isset($data->newTireBrandId) ? trim($data->newTireBrandId) : null;
+                $newTireSize = isset($data->newTireSize) ? $data->newTireSize : null;
+                $newMileShouldChangeTire = isset($data->newMileShouldChangeTire) ? $data->newMileShouldChangeTire : null;
+                $reasonForChangeTire = isset($data->reasonForChangeTire) ? trim($data->reasonForChangeTire) : null;
+                $CreateBy = isset($data->CreateBy) ? trim($data->CreateBy) : null;
                 $checklicensePlateExists = $TireTruckModel->checkPositionWheel($conn, $licensePlate, $wheelPosition, $whichPart);
                 if ($checklicensePlateExists->rowCount() > 0) {
-                    $result = $TireTruckModel->deleteTireTruck($conn, $licensePlate, $wheelPosition, $whichPart);
-                    if ($result) {
-                        http_response_code(200);
-                        echo json_encode(array(
-                            'responseCode' => ErrorCode::SUCCESS,
-                            'message' => 'success',
-                            'timestamp' => $timestamp,
-                            'actionCode' => $actionCode,
-                            'actionNodeId' => $actionNodeId
-                        ));
-                        return;
+                    $resultUpdate = $TireTruckModel->updateChangeTireTruck($conn,
+                            $reasonForChangeTire,
+                            $CreateBy,
+                            $wheelPosition,
+                            $whichPart,
+                            $licensePlate);
+                    if ($resultUpdate) {
+                        $result = $TireTruckModel->changeTireTruck($conn,
+                                $whichPart,
+                                $licensePlate,
+                                $wheelPosition,
+                                $newWheelPositionCode,
+                                $newTireCode,
+                                $newTireBrandId,
+                                $newTireSize,
+                                $newMileShouldChangeTire,
+                                $CreateBy);
+                        if ($result) {
+                            $TireTruckModel->insertTireHistory($conn, $whichPart,
+                                    $licensePlate,
+                                    $wheelPosition,
+                                    $oldTireCode,
+                                    $oldTireBrandId,
+                                    $oldTireSize,
+                                    $newTireCode,
+                                    $newTireBrandId,
+                                    $newTireSize,
+                                    $reasonForChangeTire,
+                                    $CreateBy);
+                            http_response_code(200);
+                            echo json_encode(array(
+                                'responseCode' => ErrorCode::SUCCESS,
+                                'message' => 'success',
+                                'timestamp' => $timestamp,
+                                'actionCode' => $actionCode,
+                                'actionNodeId' => $actionNodeId
+                            ));
+                            return;
+                        } else {
+                            $TireTruckModel->deleteTireTruck($conn, $wheelPosition, $whichPart, $licensePlate);
+                            echo json_encode(array(
+                                'responseCode' => ErrorCode::CHANGE_TIRE_TRUCK_FAIL,
+                                'message' => 'fail',
+                                'timestamp' => $timestamp,
+                                'actionCode' => $actionCode,
+                                'actionNodeId' => $actionNodeId
+                            ));
+                        }
                     }
                     http_response_code(200);
                     echo json_encode(array(
-                        'responseCode' => ErrorCode::DELETE_TIRE_TRUCK_FAIL,
+                        'responseCode' => ErrorCode::CHANGE_TIRE_TRUCK_FAIL,
                         'message' => 'fail',
                         'timestamp' => $timestamp,
                         'actionCode' => $actionCode,

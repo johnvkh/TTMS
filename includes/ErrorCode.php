@@ -243,13 +243,15 @@ class ErrorCode {
     const DELETE_STAFF_FAIL = '10269';
     const UPDATE_STAFF_FAIL = '10270';
     //Department
-    const NOT_FOUND_DEPARTMENT = '10269';
-    const INSERT_DEPARTMENT_FAIL = '10268';
-    const UPDATE_DEPARTMENT_FAIL = '10267';
-    const DELETE_DEPARTMENT_FAIL = '10266';
+    const NOT_FOUND_DEPARTMENT = '10271';
+    const INSERT_DEPARTMENT_FAIL = '10272';
+    const UPDATE_DEPARTMENT_FAIL = '10273';
+    const DELETE_DEPARTMENT_FAIL = '10274';
     //Branch
-    const NOT_FOUND_BRANCH = '10269';
-    const INSERT_BRANCH_FAIL = '10268';
-    const UPDATE_BRANCH_FAIL = '10267';
-    const DELETE_BRANCH_FAIL = '10266';
+    const NOT_FOUND_BRANCH = '10275';
+    const INSERT_BRANCH_FAIL = '10276';
+    const UPDATE_BRANCH_FAIL = '10277';
+    const DELETE_BRANCH_FAIL = '10278';
+    //Change trie truck
+    const CHANGE_TIRE_TRUCK_FAIL = '10279';
 }

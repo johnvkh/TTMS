@@ -27,7 +27,7 @@ class TireTruckModel {
             a.update_date  as update_date
         FROM
             tire_truck a 
-        WHERE
+        WHERE status =1 and
             a.which_part = :which_part
             AND a.license_plate = :license_plate";
 
@@ -45,7 +45,7 @@ class TireTruckModel {
 
     public function getTireTruck($conn, $whichPart, $licensePlate, $wheelPosition) {
         try {
-            $sql = 'SELECT * FROM tire_truck WHERE which_part = ' . $whichPart . ' and license_plate = ' . $licensePlate . ' ';
+            $sql = 'SELECT * FROM tire_truck WHERE status=1 and which_part = ' . $whichPart . ' and license_plate = ' . $licensePlate . ' ';
 
             if (!empty($wheelPosition)) {
                 $sql .= " and wheel_position = :wheel_position ";
@@ -60,7 +60,7 @@ class TireTruckModel {
             printf('exception:: ' . __FUNCTION__ . ' -> ' . $ex->getMessage());
         }
     }
-    
+
     public function getTireTruckForUpdate($conn, $whichPart, $licensePlate) {
         try {
             $sql = 'SELECT * FROM tire_truck WHERE which_part = ' . $whichPart . ' and license_plate = ' . $licensePlate . ' ';
@@ -188,6 +188,7 @@ class TireTruckModel {
                     . "tire_brand_id,"
                     . "tire_size,"
                     . "mile_should_change_tire,"
+                    . "status,"
                     . "create_by,"
                     . "create_date) "
                     . " VALUES ("
@@ -200,6 +201,7 @@ class TireTruckModel {
                     . ":tire_brand_id,"
                     . ":tire_size,"
                     . ":mile_should_change_tire,"
+                    . "1,"
                     . ":create_by,"
                     . "sysdate())";
             $stmt = $conn->prepare($sql);
@@ -227,11 +229,11 @@ class TireTruckModel {
         try {
             $reasonStr = "";
             if (!empty($reasonForChangeTire)) {
-                $reasonStr = " reason_change_tire= '".$reasonForChangeTire."', ";
+                $reasonStr = " reason_change_tire= '" . $reasonForChangeTire . "', ";
             }
-            
+
             $sql = "UPDATE tire_truck SET wheel_position=:wheelPosition,wheel_position_code=:wheelPositionCode,tire_code=:tireCode,changed_tire_latest_date=:changedTireLatestDate,"
-                    . "tire_brand_id=:tireBrandId,tire_size=:tireSize,".$reasonStr." mile_should_change_tire=:mileShouldChangeTire,"
+                    . "tire_brand_id=:tireBrandId,tire_size=:tireSize," . $reasonStr . " mile_should_change_tire=:mileShouldChangeTire,"
                     . "status=:status,update_by=:update_by,update_date= sysdate() WHERE wheel_position=:wheelPosition and which_part=:which_part and license_plate=:license_plate";
             $stmt = $conn->prepare($sql);
             $stmt->bindParam(':wheelPositionCode', $wheelPositionCode);
@@ -254,18 +256,22 @@ class TireTruckModel {
         }
     }
 
-    public function deleteTireTruck($conn, $licensePlate, $wheelPosition, $whichPart) {
+    public function updateChangeTireTruck($conn, $reasonForChangeTire, $CreateBy, $wheelPosition, $whichPart, $licensePlate) {
         try {
-            $sql = "delete from tire_truck where license_plate = :license_plate And which_part =:which_part";
-            if (!empty($wheelPosition)) {
-                $sql .= " and wheel_position = :wheel_position ";
-            }
+            $sql = "UPDATE tire_truck SET 
+                    reason_change_tire=:reason_change_tire,
+                    status=0,
+                    update_by=:update_by,
+                    update_date= sysdate() 
+                    WHERE wheel_position=:wheelPosition 
+                    and which_part=:which_part 
+                    and license_plate=:license_plate";
             $stmt = $conn->prepare($sql);
-            $stmt->bindParam(':license_plate', $licensePlate);
+            $stmt->bindParam(':reason_change_tire', $reasonForChangeTire);
+            $stmt->bindParam(':update_by', $CreateBy);
+            $stmt->bindParam(':wheelPosition', $wheelPosition);
             $stmt->bindParam(':which_part', $whichPart);
-            if (!empty($wheelPosition)) {
-                $stmt->bindParam(':wheel_position', $wheelPosition);
-            }
+            $stmt->bindParam(':license_plate', $licensePlate);
             if ($stmt->execute()) {
                 return true;
             }
@@ -277,7 +283,7 @@ class TireTruckModel {
 
     public function checkPositionWheel($conn, $licensePlate, $wheelPosition, $whichPart) {
         try {
-            $sql = "select tire_truck_id from tire_truck where license_plate = :license_plate And which_part =:which_part ";
+            $sql = "select tire_truck_id from tire_truck where status=1 and license_plate = :license_plate And which_part =:which_part ";
             if (!empty($wheelPosition)) {
                 $sql .= " and wheel_position = :wheel_position";
             }
@@ -289,6 +295,141 @@ class TireTruckModel {
             }
             $stmt->execute();
             return $stmt;
+        } catch (Exception $ex) {
+            printf('exception:: ' . __FUNCTION__ . ' -> ' . $ex->getMessage());
+        }
+    }
+
+    public function changeTireTruck($conn, $whichPart,
+            $licensePlate,
+            $wheelPosition,
+            $newWheelPositionCode,
+            $newTireCode,
+            $newTireBrandId,
+            $newTireSize,
+            $newMileShouldChangeTire,
+            $CreateBy) {
+        try {
+            $sql = "INSERT INTO tire_truck("
+                    . "which_part,"
+                    . "license_plate,"
+                    . "wheel_position,"
+                    . "wheel_position_code,"
+                    . "tire_code,"
+                    . "changed_tire_latest_date,"
+                    . "tire_brand_id,"
+                    . "tire_size,"
+                    . "mile_should_change_tire,"
+                    . "status,"
+                    . "create_by,"
+                    . "create_date) "
+                    . " VALUES ("
+                    . ":which_part,"
+                    . ":license_plate,"
+                    . ":wheel_position,"
+                    . ":wheel_position_code,"
+                    . ":tire_code,"
+                    . "sysdate(),"
+                    . ":tire_brand_id,"
+                    . ":tire_size,"
+                    . ":mile_should_change_tire,"
+                    . "'1',"
+                    . ":create_by,"
+                    . "sysdate())";
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam(':which_part', $whichPart);
+            $stmt->bindParam(':license_plate', $licensePlate);
+            $stmt->bindParam(':wheel_position', $wheelPosition);
+            $stmt->bindParam(':wheel_position_code', $newWheelPositionCode);
+            $stmt->bindParam(':tire_code', $newTireCode);
+            $stmt->bindParam(':tire_brand_id', $newTireBrandId);
+            $stmt->bindParam(':tire_size', $newTireSize);
+            $stmt->bindParam(':mile_should_change_tire', $newMileShouldChangeTire);
+            $stmt->bindParam(':create_by', $CreateBy);
+            if ($stmt->execute()) {
+                return true;
+            }
+            return false;
+        } catch (Exception $ex) {
+            printf('exception:: ' . __FUNCTION__ . ' -> ' . $ex->getMessage());
+        }
+    }
+
+    public function deleteTireTruck($conn, $newWheelPosition, $whichPart, $licensePlate) {
+        try {
+            $sql = "delete from tire_truck 
+                    WHERE wheel_position=:wheelPosition 
+                    and which_part=:which_part 
+                    and license_plate=:license_plate and status=1";
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam(':wheelPosition', $newWheelPosition);
+            $stmt->bindParam(':which_part', $whichPart);
+            $stmt->bindParam(':license_plate', $licensePlate);
+            if ($stmt->execute()) {
+                return true;
+            }
+            return false;
+        } catch (Exception $ex) {
+            printf('exception:: ' . __FUNCTION__ . ' -> ' . $ex->getMessage());
+        }
+    }
+
+    public function insertTireHistory($conn, $whichPart,
+            $licensePlate,
+            $wheelPosition,
+            $oldTireCode,
+            $oldTireBrandId,
+            $oldTireSize,
+            $newTireCode,
+            $newTireBrandId,
+            $newTireSize,
+            $reasonForChangeTire,
+            $CreateBy) {
+        try {
+            $sql = "insert into tire_history (
+                    which_part,
+                    license_plate,
+                    wheel_position,
+                    old_tire_code,
+                    old_tire_brand_id,
+                    old_tire_size,
+                    new_tire_code,
+                    new_tire_brand_id,
+                    new_tire_size,
+                    change_tire_date,
+                    reason_change_tire,
+                    create_by
+                    )
+                    VALUES(
+                    :which_part,
+                    :license_plate,
+                    :wheel_position,
+                    :old_tire_code,
+                    :old_tire_brand_id,
+                    :old_tire_size,
+                    :new_tire_code,
+                    :new_tire_brand_id,
+                    :new_tire_size,
+                    sysdate(),
+                    :reason_change_tire,
+                    :create_by
+                    )";
+            $stmt = $conn->prepare($sql);
+            $stmt->bindParam(':which_part', $whichPart);
+            $stmt->bindParam(':license_plate', $licensePlate);
+            $stmt->bindParam(':wheel_position', $wheelPosition);
+            $stmt->bindParam(':old_tire_code', $oldTireCode);
+            $stmt->bindParam(':old_tire_brand_id', $oldTireBrandId);
+            $stmt->bindParam(':old_tire_size', $oldTireSize);
+            $stmt->bindParam(':new_tire_code', $newTireCode);
+            $stmt->bindParam(':new_tire_brand_id', $newTireBrandId);
+            $stmt->bindParam(':new_tire_size', $newTireSize);
+            $stmt->bindParam(':reason_change_tire', $reasonForChangeTire);
+            $stmt->bindParam(':create_by', $CreateBy);
+            if ($stmt->execute()) {
+                return true;
+            }
+            return false;
         } catch (Exception $ex) {
             printf('exception:: ' . __FUNCTION__ . ' -> ' . $ex->getMessage());
         }

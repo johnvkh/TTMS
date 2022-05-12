@@ -3,11 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/TTMS/model/TruckRegistrationBackPartModel.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/dailywork/releasetrucksharingbill.php</file>
             <file>file:/C:/xampp/htdocs/TTMS/utils/logger.php</file>
-            <file>file:/C:/xampp/htdocs/TTMS/logs/full_2022.05.10.log</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/tireHistory.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/model/ReleaseTruckSharingBillModel.php</file>
             <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/trucktype.php</file>
-            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/truckregistrationbackpart.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/tireTruck.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/deliverylocation.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/index.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/driver.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/truckregularuse.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/province.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/ownertrucksharing.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/truckrepair/repairtype.php</file>
+            <file>file:/C:/xampp/htdocs/TTMS/api/basic_information/other.php</file>
         </group>
     </open-files>
 </project-private>

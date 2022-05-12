@@ -1,0 +1,167 @@
+2022/05/12 06:37:45 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 06:37:45 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   ActionCode : 99591
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   LicensePlate : 00005
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   OldTireCode : update 1
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   NewWheelPositionCode : P1
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   NewTireCode : P001
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   NewTireBrandId : 1
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   NewTireSize : 50x50
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   NewMileShouldChangeTire : 1000
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   ReasonForChangeTire : old tire broken
+2022/05/12 06:37:45 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/12 06:37:45 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 06:38:25 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 06:38:25 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   ActionCode : 99591
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   LicensePlate : 00005
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   OldTireCode : update 1
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   NewWheelPositionCode : P1
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   NewTireCode : P001
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   NewTireBrandId : 1
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   NewTireSize : 50x50
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   NewMileShouldChangeTire : 1000
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   ReasonForChangeTire : old tire broken
+2022/05/12 06:38:25 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/12 06:38:25 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 06:46:59 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 06:46:59 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   ActionCode : 99591
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   LicensePlate : 00005
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   OldTireCode : update 1
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   NewWheelPositionCode : P1
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   NewTireCode : P001
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   NewTireBrandId : 1
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   NewTireSize : 50x50
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   NewMileShouldChangeTire : 1000
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   ReasonForChangeTire : old tire broken
+2022/05/12 06:46:59 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/12 06:46:59 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 06:47:59 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 06:47:59 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   ActionCode : 99591
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   LicensePlate : 00005
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   OldTireCode : update 1
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   NewWheelPositionCode : P1
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   NewTireCode : P001
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   NewTireBrandId : 1
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   NewTireSize : 50x50
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   NewMileShouldChangeTire : 1000
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   ReasonForChangeTire : old tire broken
+2022/05/12 06:47:59 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/12 06:47:59 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 06:50:03 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 06:50:03 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   ActionCode : 99591
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   LicensePlate : 00005
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   OldTireCode : update 1
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   NewWheelPositionCode : P1
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   NewTireCode : P001
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   NewTireBrandId : 1
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   NewTireSize : 50x50
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   NewMileShouldChangeTire : 1000
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   ReasonForChangeTire : old tire broken
+2022/05/12 06:50:03 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/12 06:50:03 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 08:12:17 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 08:12:17 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   ActionCode : 99591
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   LicensePlate : 00005
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   OldTireCode : update 1
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   NewWheelPositionCode : P1
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   NewTireCode : P001
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   NewTireBrandId : 1
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   NewTireSize : 50x50
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   NewMileShouldChangeTire : 1000
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   ReasonForChangeTire : old tire broken
+2022/05/12 08:12:17 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/12 08:12:17 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 08:14:35 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 08:14:35 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   ActionCode : 99591
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   LicensePlate : 00005
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   OldTireCode : update 1
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   NewWheelPositionCode : P1
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   NewTireCode : P001
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   NewTireBrandId : 1
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   NewTireSize : 50x50
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   NewMileShouldChangeTire : 1000
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   ReasonForChangeTire : old tire broken
+2022/05/12 08:14:35 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/12 08:14:35 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 08:33:12 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 08:33:12 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   ActionCode : 99591
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   LicensePlate : 00005
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   OldTireCode : update 1
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   OldTireBrandId : 1
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   NewWheelPositionCode : P1
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   NewTireCode : P001
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   NewTireBrandId : 1
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   NewTireSize : 50x50
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   NewMileShouldChangeTire : 1000
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   ReasonForChangeTire : old tire broken
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/12 08:33:12 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 08:33:12 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 08:33:12 [ INFO ][tireTruck] - -----------RESPONSE TO CLIENT -----------
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   ResponseCode : 10000
+2022/05/12 08:33:12 [ INFO ][tireTruck] -   Message : Invalid old Tire Size
+2022/05/12 08:33:12 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 08:33:36 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/12 08:33:36 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   ActionCode : 99591
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   LicensePlate : 00005
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   OldTireCode : update 1
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   OldTireBrandId : 1
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   OldTireSize : 50x50
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   NewWheelPositionCode : P1
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   NewTireCode : P001
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   NewTireBrandId : 1
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   NewTireSize : 50x50
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   NewMileShouldChangeTire : 1000
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   ReasonForChangeTire : old tire broken
+2022/05/12 08:33:36 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/12 08:33:36 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/12 11:25:30 [ INFO ][trucktype] - /TTMS/api/basic_information/trucktype.php
+2022/05/12 11:25:30 [ INFO ][trucktype] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/12 11:25:30 [ INFO ][trucktype] -   ActionCode : 99999
+2022/05/12 11:25:30 [ INFO ][trucktype] -   ActionNodeId : 1
+2022/05/12 11:25:30 [ INFO ][trucktype] - -----------------------------------------
+2022/05/12 11:25:30 [ INFO ][trucktype] - /TTMS/api/basic_information/trucktype.php
+2022/05/12 11:25:30 [ INFO ][trucktype] - -----------RESPONSE TO CLIENT -----------
+2022/05/12 11:25:30 [ INFO ][trucktype] -   Result : 4
+2022/05/12 11:25:30 [ INFO ][trucktype] -   Data : [{"truckTypeId":"172","truckTypeCode":"T-113","truckTypeName":"\u0eab\u0eb2\u0e87\u0ea5\u0eb2\u0e81 \u0eaa\u0eb5\u0e82\u0ebd\u0ea7","tireLifeKm":50000,"tireLifeDay":"5000","numberOfWheels":"12","createBy":"unauthroized","createDate":"2022-04-19 10:46:16","updateBy":null,"updateDate":null},{"truckTypeId":"171","truckTypeCode":"K.","truckTypeName":"\u0eab\u0ebb\u0ea7\u0ea5\u0eb2\u0e81 \u0eaa\u0eb5\u0e82\u0ebd\u0ea7","tireLifeKm":50000,"tireLifeDay":"500","numberOfWheels":"16","createBy":"admin","createDate":"2021-12-21 10:04:53","updateBy":"unauthroized","updateDate":"2022-01-26 06:55:57"},{"truckTypeId":"170","truckTypeCode":"K,","truckTypeName":"\u0eab\u0ebb\u0ea7\u0ea5\u0eb2\u0e81 \u0eaa\u0eb5\u0ec0\u0eab\u0ebc\u0eb7\u0ead\u0e87","tireLifeKm":50000,"tireLifeDay":"500","numberOfWheels":"10","createBy":"admin","createDate":"2021-12-21 10:04:23","updateBy":"unauthroized","updateDate":"2022-01-16 13:34:14"},{"truckTypeId":"169","truckTypeCode":"K","truckTypeName":"\u0eab\u0ebb\u0ea7\u0ea5\u0eb2\u0e81 \u0eaa\u0eb5\u0e82\u0eb2\u0ea7","tireLifeKm":50000,"tireLifeDay":"500","numberOfWheels":"10","createBy":"admin","createDate":"2021-12-21 09:27:07","updateBy":null,"updateDate":null}]
+2022/05/12 11:25:30 [ INFO ][trucktype] -   ResponseCode : 00000
+2022/05/12 11:25:30 [ INFO ][trucktype] -   Message : success
+2022/05/12 11:25:30 [ INFO ][trucktype] -   Timestamp : 2022-05-12 11:25:30
+2022/05/12 11:25:30 [ INFO ][trucktype] -   ActionCode : 99999
+2022/05/12 11:25:30 [ INFO ][trucktype] -   ActionNodeId : 1
+2022/05/12 11:25:30 [ INFO ][trucktype] - -----------------------------------------
