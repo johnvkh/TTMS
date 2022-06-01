@@ -1,0 +1,90 @@
+2022/05/26 04:30:33 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/26 04:30:33 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   ActionCode : 99927
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   LicensePlate : 00015 
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   WheelPositionCode : P1
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   TireCode : 01
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   ChangedTireLatestDate : 2022-02-20
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   TireBrandId : 1
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   TireSize : 50x50
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   MileShouldChangeTire : 1000
+2022/05/26 04:30:33 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/26 04:30:33 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/26 04:30:54 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/26 04:30:54 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   ActionCode : 99927
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   LicensePlate : 00015 
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   WheelPositionCode : P1
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   TireCode : 01
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   ChangedTireLatestDate : 2022-02-20
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   TireBrandId : 1
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   TireSize : 50x50
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   MileShouldChangeTire : 1000
+2022/05/26 04:30:54 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/26 04:30:54 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/26 04:33:08 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/26 04:33:08 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   ActionCode : 99927
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   LicensePlate : 00015 
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   WheelPositionCode : P1
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   TireCode : 01
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   ChangedTireLatestDate : 2022-02-20
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   TireBrandId : 1
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   TireSize : 50x50
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   MileShouldChangeTire : 1000
+2022/05/26 04:33:08 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/26 04:33:08 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/26 04:34:03 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/26 04:34:03 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   ActionCode : 99927
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   LicensePlate : 00015 
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   WheelPositionCode : P1
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   TireCode : 01
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   ChangedTireLatestDate : 2022-02-20
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   TireBrandId : 1
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   TireSize : 50x50
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   MileShouldChangeTire : 1000
+2022/05/26 04:34:03 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/26 04:34:03 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/26 04:36:26 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/26 04:36:26 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   ActionCode : 99927
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   LicensePlate : 00015 
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   WheelPosition : 1
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   WheelPositionCode : P1
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   TireCode : 01
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   ChangedTireLatestDate : 2022-02-20
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   TireBrandId : 1
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   TireSize : 50x50
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   MileShouldChangeTire : 1000
+2022/05/26 04:36:26 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/26 04:36:26 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/26 04:39:39 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/26 04:39:39 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   ActionCode : 99927
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   LicensePlate : 00015 
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   WheelPosition : 3
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   WheelPositionCode : P1
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   TireCode : 01
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   ChangedTireLatestDate : 2022-02-20
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   TireBrandId : 1
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   TireSize : 50x50
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   MileShouldChangeTire : 1000
+2022/05/26 04:39:39 [ INFO ][tireTruck] -   CreateBy : admin
+2022/05/26 04:39:39 [ INFO ][tireTruck] - -----------------------------------------

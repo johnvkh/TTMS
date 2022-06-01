@@ -98,3 +98,4 @@ spl_autoload_register('loadModel');
 spl_autoload_register('loadTruckInventoryModel');
 spl_autoload_register('loadTruckModel');
 spl_autoload_register('BasicInfoModel');
+spl_autoload_register('loadRepairModel');

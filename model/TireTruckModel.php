@@ -63,8 +63,9 @@ class TireTruckModel {
 
     public function getTireTruckForUpdate($conn, $whichPart, $licensePlate) {
         try {
-            $sql = 'SELECT * FROM tire_truck WHERE which_part = ' . $whichPart . ' and license_plate = ' . $licensePlate . ' ';
+            $sql = 'SELECT * FROM tire_truck WHERE which_part = ' . $whichPart . ' and license_plate =  :licensePlate  ';
             $stmt = $conn->prepare($sql);
+            $stmt->bindParam(':licensePlate', $licensePlate);
             $stmt->execute();
             return $stmt;
         } catch (Exception $ex) {

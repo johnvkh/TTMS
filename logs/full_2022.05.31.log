@@ -1,0 +1,28 @@
+2022/05/31 10:57:05 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/31 10:57:05 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/31 10:57:05 [ INFO ][tireTruck] -   ActionCode : 99929
+2022/05/31 10:57:05 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/31 10:57:05 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/31 10:57:05 [ INFO ][tireTruck] -   LicensePlate : 00001
+2022/05/31 10:57:05 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/31 10:59:40 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/31 10:59:40 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/31 10:59:40 [ INFO ][tireTruck] -   ActionCode : 99929
+2022/05/31 10:59:40 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/31 10:59:40 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/31 10:59:40 [ INFO ][tireTruck] -   LicensePlate : 00001
+2022/05/31 10:59:40 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/31 11:00:00 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/31 11:00:00 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/31 11:00:00 [ INFO ][tireTruck] -   ActionCode : 99929
+2022/05/31 11:00:00 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/31 11:00:00 [ INFO ][tireTruck] -   WhichPart : 0
+2022/05/31 11:00:00 [ INFO ][tireTruck] -   LicensePlate : 0118
+2022/05/31 11:00:00 [ INFO ][tireTruck] - -----------------------------------------
+2022/05/31 11:00:05 [ INFO ][tireTruck] - /TTMS/api/basic_information/tireTruck.php
+2022/05/31 11:00:05 [ INFO ][tireTruck] - -----------REQUEST FROM CLIENT POST-----------
+2022/05/31 11:00:05 [ INFO ][tireTruck] -   ActionCode : 99929
+2022/05/31 11:00:05 [ INFO ][tireTruck] -   ActionNodeId : 1
+2022/05/31 11:00:05 [ INFO ][tireTruck] -   WhichPart : 1
+2022/05/31 11:00:05 [ INFO ][tireTruck] -   LicensePlate : 0118
+2022/05/31 11:00:05 [ INFO ][tireTruck] - -----------------------------------------

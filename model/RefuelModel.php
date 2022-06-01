@@ -78,8 +78,6 @@ class RefuelModel
         $totalPrice,
         $createBy
     ) {
-
-
         try {
             $sql = "INSERT INTO `refuel_cost`(
                 `perform_bill`,

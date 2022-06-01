@@ -162,7 +162,7 @@ class TruckRegistrationHeadPartModel {
         }
     }
 
-    public function getChangeOil($conn, $licensePlate) {
+    public function getChangeEnginOil($conn, $licensePlate) {
         try {
             $sql = "SELECT license_plate, km_number_change_gear_oil_next_time, km_number_change_engine_oil_next_time FROM change_oil WHERE license_plate = :license_plate;";
             $stmt = $conn->prepare($sql);
